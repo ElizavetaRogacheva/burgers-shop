@@ -13,6 +13,7 @@
 .main-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .main-logo {
@@ -23,13 +24,13 @@
 .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 69px;
+    margin: 0 0 0 60px;
     padding: 0;
     list-style: none;
 }
 
 .main-nav__item {
-    margin-left: 34px;
+    margin-left: 36px;
 
     &:first-child {
         margin-left: 0;
@@ -56,6 +57,7 @@
         right: -20px;
         top: 5px;
     }
+
     
 }
 
