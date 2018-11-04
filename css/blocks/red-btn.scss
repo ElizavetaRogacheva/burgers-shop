@@ -9,4 +9,13 @@
     padding: 12px 15px;
     border-radius: 10%;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($red, 10%);
+    }
+
+    &:active {
+        color: darken(#fff, 10%);
+    }
 }

@@ -75,6 +75,7 @@
     align-items: center;
     justify-content: space-around;
     padding-left: 20px;
+    margin-bottom: 85px;
 }
 
 .promo__picture {
@@ -113,4 +114,5 @@
     width: 29px;
     height: 14px;
     background-image: url(../img/arrow-scroll.png);
+    cursor: pointer;
 }
