@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &--info {
+        padding-top: 115px;
+    }
 }
 
 .main-header {
