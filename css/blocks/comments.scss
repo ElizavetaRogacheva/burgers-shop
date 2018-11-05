@@ -1,0 +1,81 @@
+.comments-section {
+    background-color: #000;
+    height: 100vh;
+    min-height: 650px;
+}
+
+.comments__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.comments__item {
+    position: relative;
+    min-width: 25%;
+    max-height: 50%;
+    background: center center / cover no-repeat;
+    filter: grayscale(100%);
+
+    &:hover {
+        .comments-container {
+            opacity: 1;
+        }
+    }
+}
+
+.comments-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#000, 0.5);
+    opacity: 0;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 33px;
+}
+.comment__title {
+    margin: 0;
+    color: #ffffff;
+    font-family: Gagalin-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.comment__text {
+    margin: 0;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.comment__btn {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: $dark-gray;
+    padding: 12px 15px;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($dark-gray, 10%);
+    }
+
+    &:active {
+        color: darken(#fff, 10%);
+    }
+
+}
