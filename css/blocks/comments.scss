@@ -14,10 +14,11 @@
     max-height: 50%;
     background: center center / cover no-repeat;
     filter: grayscale(100%);
-
+    
     &:hover {
         .comments-container {
             opacity: 1;
+            transition: 1s;
         }
     }
 }
