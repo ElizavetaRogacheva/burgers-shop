@@ -1,13 +1,8 @@
 .comments-section {
     background-color: #000;
-    height: 100vh;
-    min-height: 650px;
 }
 
 .comments__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -40,7 +35,6 @@
     padding-right: 33px;
 }
 .comment__title {
-    margin: 0;
     color: #ffffff;
     font-family: Gagalin-Regular;
     font-size: 14px;
@@ -49,7 +43,6 @@
 }
 
 .comment__text {
-    margin: 0;
     color: #ffffff;
     font-family: Ubuntu;
     font-size: 14px;

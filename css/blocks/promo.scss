@@ -1,6 +1,4 @@
 .promo {
-    height: 100vh;
-    min-height: 650px;
     background: url(../img/2-layers.jpg) center center / cover no-repeat;
     padding-top: 13px;
 }
@@ -32,8 +30,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 60px;
-    padding: 0;
-    list-style: none;
 }
 
 .main-nav__item {
@@ -97,8 +93,6 @@
 }
 
 .promo__title {
-    margin: 0;
-    padding: 0;
     font-family: Gagalin-Regular;
     font-size: 72px;
     font-weight: 400;
@@ -108,8 +102,6 @@
 }
 
 .promo__description {
-    margin: 0;
-    padding: 0;
     color: #ffffff;
     font-size: 65px;
     font-family: Lifehack-Medium;
