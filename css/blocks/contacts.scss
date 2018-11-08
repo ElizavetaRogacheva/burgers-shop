@@ -1,0 +1,54 @@
+.contacts-section {
+    background: url(../img/map.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+.contacts__footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: absolute;
+}
+
+.center-block {
+    width: 940px;
+    margin: 0 auto;    
+    height: 100%;
+    display: flex;
+}
+
+.contacts__info {    
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-top: 5px;
+}
+
+.contacts__social {
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+}
+
+.address {
+    font-family: "Ubuntu-Light";
+    font-weight: 300;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    margin-right: 5px;
+}
+
+.number {
+    color: $red;
+    font-family: "Ubuntu-Bold";
+}
