@@ -72,3 +72,12 @@
 .hidden {
     display: none;
 }
+
+.active {
+    h3 {
+        color: $yellow;
+    }
+    svg {
+        transform: rotate(180deg);
+    }
+}
