@@ -6,8 +6,10 @@
 .contacts__footer {
     width: 100%;
     height: 60px;
-    background-color: #000;
+    background-color:#000;
+    background: url(../img/texture-footer.jpg) center center / cover no-repeat;
     position: absolute;
+    bottom: 0;
 }
 
 .center-block {
@@ -29,7 +31,6 @@
 }
 
 .contacts__social {
-    background-color: aqua;
     height: 100%;
     width: 50%;
 }
@@ -51,4 +52,23 @@
 .number {
     color: $red;
     font-family: "Ubuntu-Bold";
+}
+
+.contacts__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social__link {
+    margin-left: 20px;
+    opacity: 0.3;
+
+    &:first-child {
+        margin: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
 }
