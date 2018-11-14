@@ -1,8 +1,8 @@
 .menu-section {
     background: url(../img/burgers-layer.jpg) center center / cover no-repeat;
     position: relative;
-    padding-top: 110px;
-    padding-left: 100px;
+    padding-top: rem(110px);
+    padding-left: rem(100px);
 }
 
 .menu__title {
@@ -27,7 +27,7 @@
 }
 
 .accordion-menu__btn {
-    width: 80px;
+    width: rem(80px);
     position: relative;
     background-position: center;
     background-size: cover;
@@ -36,14 +36,14 @@
 }
 
 .accordion-menu__btn-title {
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
-    margin-top: -20px;
+    margin-top: rem(-20px);
     white-space: nowrap;
 }
 
@@ -57,16 +57,16 @@
 
 .content-block__text {
     color: #fff;
-    padding: 30px;
-    width: 470px;
+    padding: rem(30px);
+    width: rem(470px);
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 .accordion-menu__item--active {
     .accordion-menu__content-block {
-        max-width: 540px;
+        max-width: rem(540px);
     }
 }
