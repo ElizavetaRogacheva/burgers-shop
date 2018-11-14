@@ -1,17 +1,17 @@
 .promo {
     background: url(../img/2-layers.jpg) center center / cover no-repeat;
-    padding-top: 13px;
+    padding-top: rem(13px);
 }
 
 .center-container {
     margin: 0 auto;
-    width: 940px;
+    width: rem(940px);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &--info {
-        padding-top: 115px;
+        padding-top: rem(115px);
     }
 }
 
@@ -22,18 +22,18 @@
 }
 
 .main-logo {
-    width: 92px;
-    height: 69px;
+    width: rem(92px);
+    height: rem(69px);
 }
 
 .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 rem(60px);
 }
 
 .main-nav__item {
-    margin-left: 36px;
+    margin-left: rem(36px);
 
     &:first-child {
         margin-left: 0;
@@ -50,21 +50,21 @@
     text-decoration: none;
     color: #fff;
     font-family: Ubuntu;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
-    line-height: 30px;
+    line-height: rem(30px);
     text-transform: uppercase;
     position: relative;
 
     &:after {
         content: '';
         position: absolute;
-        width: 4px;
-        height: 4px;
+        width: rem(4px);
+        height: rem(4px);
         border-radius: 50%;
         background: #fff;
-        right: -20px;
-        top: 5px;
+        right: rem(-20px);
+        top: rem(5px);
     }
 
     
