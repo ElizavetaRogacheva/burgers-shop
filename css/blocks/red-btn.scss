@@ -1,12 +1,12 @@
 .red-button {
     color: #fff;
     font-family: Ubuntu;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     background-color: $red;
-    margin: 0 0 0 30px;
-    padding: 12px 15px;
+    margin: 0 0 0 rem(30px);
+    padding: rem(12px) rem(15px);
     border-radius: 10%;
     border: none;
     cursor: pointer;
