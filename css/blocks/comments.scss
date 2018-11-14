@@ -31,28 +31,28 @@
     left: 0;
     background-color: rgba(#000, 0.5);
     opacity: 0;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 33px;
+    padding-top: rem(50px);
+    padding-left: rem(20px);
+    padding-right: rem(33px);
 }
 .comment__title {
     color: #ffffff;
     font-family: Gagalin-Regular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .comment__text {
     color: #ffffff;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 15px;
+    line-height: rem(24px);
+    margin-bottom: rem(15px);
 }
 
 .comment__btn {
     background-color: $dark-gray;
-    padding: 12px 15px;
+    padding: rem(12px) rem(15px);
 }
