@@ -16,4 +16,12 @@
     &:active {
         color: darken(#fff, 10%);
     }
+
+    &--red {
+        background-color: $red;
+    }
+
+    &--transparent {
+        background-color:transparent;
+    }
 }
