@@ -5,7 +5,7 @@
 
 .contacts__footer {
     width: 100%;
-    height: 60px;
+    height: rem(60px);
     background-color:#000;
     background: url(../img/texture-footer.jpg) center center / cover no-repeat;
     position: absolute;
@@ -13,7 +13,7 @@
 }
 
 .center-block {
-    width: 940px;
+    width: rem(940px);
     margin: 0 auto;    
     height: 100%;
     display: flex;
@@ -24,10 +24,10 @@
     width: 50%;
     color: #fff;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
-    padding-top: 5px;
+    line-height: rem(24px);
+    padding-top: rem(5px);
 }
 
 .contacts__social {
@@ -46,7 +46,7 @@
 }
 
 .phone-icon {
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .number {
@@ -61,7 +61,7 @@
 }
 
 .social__link {
-    margin-left: 20px;
+    margin-left: rem(20px);
     opacity: 0.3;
 
     &:first-child {
