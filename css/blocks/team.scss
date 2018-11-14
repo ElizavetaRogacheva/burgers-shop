@@ -12,33 +12,33 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: rem(90px);
     box-sizing: border-box;
-    padding-left: 100px;
+    padding-left: rem(100px);
 }
 
 .team__item {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .team__title {
     color: $yellow;
-    margin-bottom: 46px;
+    margin-bottom: rem(46px);
 }
 
 .team__member {
     display: flex;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 
 .arrow {
-    margin-right: 10px;
-    margin-top: 5px;
+    margin-right: rem(10px);
+    margin-top: rem(5px);
 }
 
 .team__member-name {
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }
 
@@ -48,9 +48,9 @@
 
 .member__info-block {
     color: #fff;
-    font-size: 14px;
-    line-height: 24.01px;
-    padding-left: 20px;
+    font-size: rem(14px);
+    line-height: rem(24.01px);
+    padding-left: rem(20px);
     width: 40%;
 }
 
@@ -61,7 +61,7 @@
 .team__member-function {
     font-family: "Ubuntu-Bold";
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
 
 .team__member-text {
