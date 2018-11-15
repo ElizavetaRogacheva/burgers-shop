@@ -2,9 +2,14 @@ $red: #e45028;
 $yellow: #f9b43b;
 $dark-gray: #2f3234;
 
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
+
 @import "fonts/fonts.scss";
-@import "layout.scss";
 @import "media.scss";
+@import "layout.scss";
 
 @import "blocks/team.scss";
 @import "blocks/btn.scss";
