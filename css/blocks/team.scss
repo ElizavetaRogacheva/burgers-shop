@@ -1,6 +1,7 @@
 .team-section {
     position: relative;
     background: url(../img/team.jpg) center center / cover no-repeat;
+    text-align: center;
 }
 
 .team-container {
@@ -15,10 +16,34 @@
     padding-top: rem(90px);
     box-sizing: border-box;
     padding-left: rem(100px);
+
+    @include tablets {
+        left: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-top: rem(220px);
+    }
+}
+
+.team__list {
+
+    @include tablets {
+        max-width: rem(330px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team__item {
     margin-bottom: rem(30px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team__title {
@@ -44,6 +69,11 @@
 
 .team__member-info {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .member__info-block {
@@ -52,10 +82,18 @@
     line-height: rem(24.01px);
     padding-left: rem(20px);
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .team__member-img {
     border-radius: 50%;
+
+    @include tablets {
+        max-width: rem(100px);
+    }
 }
 
 .team__member-function {
