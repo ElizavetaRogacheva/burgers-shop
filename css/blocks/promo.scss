@@ -4,29 +4,6 @@
     display: flex;
 }
 
-.center-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    max-width: rem(940px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &--info {
-        padding-top: rem(115px);
-    }
-
-    @include tablets {
-        width: 95%;
-        padding-top: rem(235px);
-    }
-
-    @include phones {
-        width: 95%;
-    }
-}
-
 .main-header {
     width: 100%;
     display: flex;

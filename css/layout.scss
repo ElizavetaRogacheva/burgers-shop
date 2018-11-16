@@ -43,6 +43,39 @@ a {
     overflow: hidden;
 }
 
+.center-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: rem(940px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--info {
+        padding-top: rem(115px);
+        
+        @include tablets {
+            padding-top: rem(235px);
+
+        }
+
+        @include phones {
+            padding-top: rem(95px);
+
+        }
+    }
+
+    @include tablets {
+        width: 95%;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+}
+
+
 .section {
     height: 100vh;
     min-height: 650px;
@@ -50,6 +83,11 @@ a {
     @include tablets {
         min-height: 1020px;
     }
+
+    @include phones {
+        min-height: 800px;
+    }
+
 }
 
 .title {
