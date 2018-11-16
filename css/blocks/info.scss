@@ -10,10 +10,11 @@
 .info__list {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .info__item {
-     min-width: rem(300px);
+     min-width: 32%;
      min-height: rem(252px);
      padding: 0 rem(5px) 0 rem(5px);
      display: flex;
