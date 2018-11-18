@@ -1,7 +1,11 @@
 .team-section {
     position: relative;
     background: url(../img/team.jpg) center center / cover no-repeat;
-    text-align: center;
+
+    @include tablets {
+        text-align: center;
+
+    }
 }
 
 .team-container {

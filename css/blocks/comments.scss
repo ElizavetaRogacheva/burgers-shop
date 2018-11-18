@@ -14,6 +14,11 @@
     max-height: 50%;
     background: center center / cover no-repeat;
     filter: grayscale(100%);
+
+    @include tablets {
+        width: 50%;
+        max-height: 25%;
+    }
     
     &:hover {
         .comments-container {
@@ -34,6 +39,17 @@
     padding-top: rem(50px);
     padding-left: rem(20px);
     padding-right: rem(33px);
+
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .comment__title {
     color: #ffffff;
@@ -41,6 +57,10 @@
     font-size: rem(14px);
     font-weight: 400;
     margin-bottom: rem(20px);
+
+    @include phones {
+        font-size: rem(24px);
+    }
 }
 
 .comment__text {
@@ -50,9 +70,8 @@
     font-weight: 300;
     line-height: rem(24px);
     margin-bottom: rem(15px);
-}
 
-.comment__btn {
-    background-color: $dark-gray;
-    padding: rem(12px) rem(15px);
+    @include phones {
+        display: none;
+    }
 }

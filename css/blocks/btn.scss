@@ -24,4 +24,22 @@
     &--transparent {
         background-color:transparent;
     }
+
+    &--comment {
+        background-color: $dark-gray;
+        display: block;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &--mobile {
+        display: none;
+        background-color: $dark-gray;
+
+        @include phones {
+            display: block;
+        }
+    }
 }
