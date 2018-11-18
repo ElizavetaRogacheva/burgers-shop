@@ -10,13 +10,24 @@
     background: url(../img/texture-footer.jpg) center center / cover no-repeat;
     position: absolute;
     bottom: 0;
+
+    @include phones {
+        height: rem(116px);
+    }
 }
 
 .center-block {
-    width: rem(940px);
+    width: 85%;
     margin: 0 auto;    
     height: 100%;
     display: flex;
+
+    @include phones {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contacts__info {    
@@ -28,11 +39,23 @@
     font-weight: 300;
     line-height: rem(24px);
     padding-top: rem(5px);
+
+    @include phones {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .contacts__social {
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include phones {
+        width: rem(142px);
+    }
 }
 
 .address {
@@ -52,12 +75,6 @@
 .number {
     color: $red;
     font-family: "Ubuntu-Bold";
-}
-
-.contacts__social {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .social__link {
