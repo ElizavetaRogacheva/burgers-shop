@@ -68,6 +68,48 @@
     margin: 0 0 0 rem(30px);
 }
 
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__burger {
+    position: relative;
+    width: rem(24px);
+    height: rem(22px);
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+    margin-left: rem(30px);
+
+    @include tablets {
+        display: block;
+    }
+
+    @include phones {
+        display: block;
+    }
+}
+
+.burger-elem {
+    @include burger;
+    top: rem(9px);
+    left: 0;
+
+    &::before {
+        @include burger;
+        content: '';
+        transform: translate(rem(-12px), rem(-9px));
+    }
+
+    &::after {
+        content: '';
+        @include burger;
+        transform: translate(rem(-12px), rem(9px));
+    }
+}
+
 .promo-container {
     display: flex;
     align-items: center;

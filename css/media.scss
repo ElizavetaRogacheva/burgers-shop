@@ -13,3 +13,11 @@
       @content;
     }
   }
+
+@mixin burger {
+    position: absolute;
+    width: rem(24px);
+    height: rem(4px);
+    background-color: #fff;
+    border-radius: rem(10px);
+}

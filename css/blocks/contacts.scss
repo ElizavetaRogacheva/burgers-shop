@@ -52,10 +52,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    @include phones {
-        width: rem(142px);
-    }
 }
 
 .address {
