@@ -96,3 +96,15 @@ a {
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.full-screen__menu {
+    @include tablets {
+        height: 100vh;
+        min-height: 1020px;
+    }
+
+    @include phones {
+        height: 100vh;
+        min-height: 800px;
+    }
+}
