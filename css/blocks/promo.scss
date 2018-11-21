@@ -229,11 +229,41 @@
     display: flex;
     align-items: center;
     z-index: 2;
+    flex-direction: column;
 }
 
 .close-modal {
-    width: rem(20px);
-    height: rem(20px);
+    width: rem(30px);
+    height: rem(30px);
+    background-color:transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    margin-top: rem(30px);
+    margin-left: 80%;
+
+    &:before {
+        content: '';
+        width: rem(4px);
+        height: rem(30px);
+        background-color: #fff;
+        position: absolute;
+        border-radius: rem(10px);
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    &:after {
+        content: '';
+        width: rem(4px);
+        height: rem(30px);
+        background-color: #fff;
+        position: absolute;
+        border-radius: rem(10px);
+        transform: rotate(-45deg);
+        top: 0;
+
+    }
 }
 
 .hidden {
