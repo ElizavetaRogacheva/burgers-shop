@@ -160,7 +160,7 @@
 .promo-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: rem(20px);
     margin-bottom: rem(85px);
     flex: 1;
@@ -185,8 +185,14 @@
     }
 }
 
+.promo__burger-img {
+    @include phones {
+        width: rem(333px);
+        height: rem(339px)
+    }
+}
+
 .promo__text {
-    max-height: rem(213px);
     padding-top: rem(45px);
     width: 50%;
 
@@ -218,6 +224,7 @@
     background-image: url(../img/arrow-scroll.png);
     cursor: pointer;
     margin-bottom: rem(42px);
+    background-size: cover;
 }
 
 
