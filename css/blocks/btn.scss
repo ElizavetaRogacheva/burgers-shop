@@ -42,4 +42,8 @@
             display: block;
         }
     }
+
+    &--order {
+        max-height: rem(35px);
+    }
 }

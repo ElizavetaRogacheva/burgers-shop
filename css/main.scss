@@ -1,6 +1,7 @@
 $red: #e45028;
 $yellow: #f9b43b;
 $dark-gray: #2f3234;
+$orange: #ec9038;
 
 $desktop: 1200px;
 $tablets: 768px;
@@ -20,3 +21,4 @@ $phones: 480px;
 @import "blocks/contacts.scss";
 @import "blocks/menu.scss";
 @import "blocks/form.scss";
+@import "blocks/slider.scss";

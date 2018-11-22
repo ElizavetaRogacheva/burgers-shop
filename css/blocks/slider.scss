@@ -1,0 +1,62 @@
+.slider-section {
+    background: linear-gradient(to top, $yellow 20%, $orange 50%, $yellow 80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deleteit {
+    width: rem(13px);
+    height: rem(27px);
+    background-color: $red;
+}
+
+.slider-container {
+    width: 85%;
+    height: 75%;
+    border: 2px solid crimson;
+    display: flex;
+}
+
+.slider__block {
+    width: 50%;
+    border: 2px solid green;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__block-desc {
+    border: 2px solid fuchsia;
+    color: #fff;
+}
+
+.block-desc__title {
+    margin-bottom: rem(55px);
+}
+
+.block-desc__text {
+    font-family: Ubuntu;
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(23.97px);
+    margin-bottom: rem(35px);
+}
+
+
+.block-desc__order {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.price {
+    color: $red;
+    margin-right: rem(30px);
+}
+
+.price span {
+    font-size: rem(30px);
+}
+
