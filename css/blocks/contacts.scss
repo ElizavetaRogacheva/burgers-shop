@@ -62,6 +62,10 @@
 .phone-number {
     display: flex;
     align-items: center;
+
+    @include phones {
+        padding-left: 35%;
+    }
 }
 
 .phone-icon {
