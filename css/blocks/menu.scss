@@ -16,14 +16,24 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .accordion-menu__list {
     display: flex;
+    width: 100%;
 }
 
 .accordion-menu__item {
     display: flex;
+
+    @include tablets {
+        flex: 0;
+
+    }
 }
 
 .accordion-menu__btn {
@@ -33,6 +43,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1 0 auto;
+
+    @include tablets {
+        flex:  0 0 auto;
+
+    }
 }
 
 .accordion-menu__btn-title {
@@ -58,15 +73,27 @@
 .content-block__text {
     color: #fff;
     padding: rem(30px);
-    width: rem(470px);
     font-family: Ubuntu;
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
 }
 
-.accordion-menu__item--active {
+
+.accordion-menu__item.active {
+    flex: 1;
     .accordion-menu__content-block {
         max-width: rem(540px);
+
+        @include tablets {
+            max-width: 100%;
+
+        }
+    }
+
+    .accordion-menu__btn-title {
+        color: $yellow;
     }
 }
+
+
