@@ -71,6 +71,8 @@
 
 .info__item-icon {
     margin-bottom: rem(33px);
+    display: flex;
+    justify-content: center;
 
     @include phones {
         margin-bottom: 0;
