@@ -31,35 +31,18 @@ sendBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
      if (validateForm(orderForm)) {
         var formData = new FormData();
-
-       /** var formData = {
-            name: orderForm.elements.name,
-            phone: orderForm.elements.phone,
-            comment: orderForm.elements.comment
-        };**/
+        formData.append("name", orderForm.elements.name.value);
+        formData.append("phone", orderForm.elements.phone.value);
+        formData.append("comment", orderForm.elements.comment.value);
+        formData.append("to", "addres@addres");
 
         var xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send(JSON.stringify(formData));
-
-       /** console.log(orderForm.elements.name.value);
-        console.log(orderForm.elements.phone.value);
-        console.log(orderForm.elements.street.value);
-        console.log(orderForm.elements.home.value);
-        console.log(orderForm.elements.housing.value);
-        console.log(orderForm.elements.apartment.value);
-        console.log(orderForm.elements.floor.value);
-        console.log(orderForm.elements.comment.value);
-        if (orderForm.elements.radioBtn.value == true) {
-            console.log('Потребуется сдача');
-        } else {
-            console.log('Оплата по карте');
-        }
-        if (orderForm.elements.call.checked == true) {
-            console.log('Не перезванивать');
-        } else {
-            console.log('Перезвонить');
-        }**/
+        xhr.send(formData);
+        xhr.addEventListener('load', () => {
+            console.log(xhr.response);
+        })
         }
      
 })

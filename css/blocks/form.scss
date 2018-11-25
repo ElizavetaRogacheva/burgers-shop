@@ -1,6 +1,7 @@
 .form-section {
     background: url(../img/texture-form.jpg) center center / cover no-repeat;
     padding-top: rem(125px);
+    position: relative;
 
     @include tablets {
         padding-top: rem(150px);
@@ -204,6 +205,24 @@
     clip: rect(0 0 0 0);
     width: rem(1px);
     height: rem(1px);
+}
+
+.modal-window {
+    background-color: #fff;
+    border-radius: rem(10px);
+    width: rem(200px);
+    height: rem(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;;
+
+    .message-text {
+        margin-bottom: rem(20px);
+    }
 }
 
 
