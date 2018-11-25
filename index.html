@@ -378,40 +378,42 @@
           <div class="center-container">
               <h1 class="form__title title">Закажите доставку</h1>
               <div class="form__container">
-                <form action="" class="form__elem">
+                <form action="" class="form__elem" id="order-form">
                   <div class="form-content">
                     <div class="form-row">
                       <label class="form__label">
                         <div class="form__label-title">Имя</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="name" required>
+                        <div class="error"></div>
                       </label>
                       <label class="form__label">
                         <div class="form__label-title">Телефон</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="phone" required>
+                        <div class="error"></div>
                       </label>
                     </div>
                     <div class="form-row">
                       <label class="form__label">
                         <div class="form__label-title">Улица</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="street">
                       </label>
                     </div>
                     <div class="form-row">
                       <label class="form__label">
                         <div class="form__label-title">Дом</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="home">
                       </label>
                       <label class="form__label">
                         <div class="form__label-title">Корпус</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="housing">
                       </label>
                       <label class="form__label form__label--third">
                         <div class="form__label-title">Квартира</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="apartment">
                       </label>
                       <label class="form__label form__label--floor">
                         <div class="form__label-title">Этаж</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="floor">
                       </label>
                     </div>
                   </div>
@@ -419,27 +421,28 @@
                     <div class="form-row form-row--comment">
                       <label class="form__label">
                         <div class="form__label-title">Комментарий</div>
-                        <textarea class="form__input form__input--comment"></textarea>
+                        <textarea class="form__input form__input--comment" name="comment" required></textarea>
+                        <div class="error"></div>
                       </label>
                     </div>
                     <div class="form-row form-row--radio">
                       <label class="form__label form__label--radio">
-                          <input type="radio" class="form__radio visually-hidden" name="radio-btn">
+                          <input type="radio" class="form__radio visually-hidden" name="radioBtn" value="нет">
                           <div class="form__label-title form__label-title--radio">Потребуется сдача</div>
                         </label>
                         <label class="form__label form__label--radio">
-                          <input type="radio" class="form__radio visually-hidden" name="radio-btn" checked>
+                          <input type="radio" class="form__radio visually-hidden" name="radioBtn" value="да">
                           <div class="form__label-title form__label-title--radio">Оплата по карте</div>
                         </label>
                     </div>
                     <div class="form-row form-row--radio">
                         <label class="form__label form__label--checkbox">
-                          <input type="checkbox" class="form__checkbox visually-hidden" checked>
+                          <input type="checkbox" class="form__checkbox visually-hidden" name="call" checked>
                           <div class="form__label-title form__label-title--radio">Не перезванивать</div>
                         </label>
                     </div>
                     <div class="btn-container">
-                      <button type="submit" class="btn btn--red">Заказать</button>
+                      <button type="submit" class="btn btn--red" id="send-btn">Заказать</button>
                       <button type="reset" class="btn btn--transparent">Очистить</button>
                     </div>
                   </div>
@@ -505,5 +508,6 @@
       <script src="js/slider.js"></script>
       <script src="js/accordion.js"></script>
       <script src="js/accordion-menu.js"></script>
+      <script src="js/form.js"></script>
     </body>
 </html>
