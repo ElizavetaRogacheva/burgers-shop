@@ -1,5 +1,8 @@
 var orderForm = document.querySelector('#order-form');
 var sendBtn = document.querySelector('#send-btn');
+var modalMessage = document.querySelector('.modal-text');
+var modal = document.querySelector('.modal-window');
+var modalBtnClose = document.querySelector('.modal-btn');
 
 
 var validateForm = function (form) {
@@ -41,8 +44,19 @@ sendBtn.addEventListener('click', function (evt) {
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
         xhr.send(formData);
         xhr.addEventListener('load', () => {
-            console.log(xhr.response);
+            if (xhr.response.status == 200) {
+                modalMessage.textContent = 'Данные успешно приняты';
+                modal.classList.remove('hidden');
+            } else {
+                modalMessage.textContent = 'Ошибка при отправке';
+                modal.classList.remove('hidden');
+            }
         })
         }
      
+})
+
+modalBtnClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.add('hidden');
 })
