@@ -20,3 +20,5 @@ close.addEventListener('click', function (evt) {
     evt.preventDefault();
     closeClickHandler();
 })
+
+$('.slider__list').slick();
