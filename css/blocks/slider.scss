@@ -6,7 +6,7 @@
 }
 
 .slider {
-    width: 90%;
+    width: rem(940px);
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -42,13 +42,14 @@
 
 .slider__list {
     display: flex;
+    width: 100%;
 }
 
 .slider__item {
     min-width: rem(922px);
     min-height: rem(470px);
     border: 2px solid seagreen;
-    display: flex;
+    display: flex !important;
 
     @include tablets {
         min-width: rem(564px);
