@@ -13,31 +13,31 @@ function ready() {
             ),
     
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
+                hintContent: 'Адрес 1',
+                balloonContent: 'Адрес 1'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'images/myIcon.gif',
+                iconImageHref: '../img/svg/map-marker.svg',
                 // Размеры метки.
-                iconImageSize: [30, 42],
+                iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-5, -38]
             }),
     
             myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-                hintContent: 'Собственный значок метки с контентом',
-                balloonContent: 'А эта — новогодняя',
+                hintContent: 'Адрес 2',
+                balloonContent: 'Адрес 2',
                 iconContent: '12'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#imageWithContent',
                 // Своё изображение иконки метки.
-                iconImageHref: 'images/ball.png',
+                iconImageHref: '../img/svg/map-marker.svg',
                 // Размеры метки.
                 iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
