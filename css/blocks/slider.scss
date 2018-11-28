@@ -1,8 +1,5 @@
 .slider-section {
     background: linear-gradient(to top, $yellow 20%, $orange 50%, $yellow 80%);
-   /* display: flex;
-    align-items: center;
-    justify-content: space-around;*/
 }
 
 .slider {
@@ -12,6 +9,14 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    @include tablets {
+        width: rem(564px);
+    }
+
+    @include phones {
+        width: rem(450px);
+    }
 }
 
 .slide__arrow {
@@ -21,6 +26,7 @@
 
 .slide__arrow--prev {
     transform: rotate(90deg);
+    z-index: 2;
 }
 
 .slide__arrow--next {
@@ -32,7 +38,7 @@
     }
 
     @include phones {
-        left: rem(438px); 
+        left: rem(375px); 
     }
 }
 
@@ -42,13 +48,20 @@
 
 .slider__list {
     display: flex;
-    width: 100%;
+    width: rem(940px);
+
+    @include tablets {
+        width: rem(564px);
+    }
+
+    @include phones {
+        width: rem(450px);
+    }
 }
 
 .slider__item {
     min-width: rem(922px);
     min-height: rem(470px);
-    border: 2px solid seagreen;
     display: flex !important;
 
     @include tablets {
@@ -59,14 +72,15 @@
     }
 
     @include phones {
+        padding-top: rem(60px);
         min-width: rem(451px);
-        min-height: rem(678px);
+        max-height: rem(678px);
     }
 }
 
 .slider__block {
     width: 50%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +113,13 @@
 
     @include tablets {
         flex-direction: row;
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
     }
 
     @include phones {
-        width: 100%;
-        left: 0;
+        width: 90%;
+        left: 5%;
         top: rem(-50px);
     }
 }
@@ -245,13 +259,13 @@
     margin-bottom: rem(55px);
 
     @include tablets {
-        width: 60%;
+        min-width: 60%;
     }
 
     @include phones {
         font-size: rem(50px);
         margin-bottom: rem(35px);
-        width: 65%;
+        min-width: 65%;
     }
 }
 
@@ -264,6 +278,7 @@
 
     @include phones {
         margin-bottom: rem(25px);
+        width: 90%;
     }
 }
 
