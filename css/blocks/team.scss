@@ -65,7 +65,7 @@
     margin-bottom: rem(10px);
 }
 
-.arrow {
+.team__member-arrow {
     margin-right: rem(10px);
     margin-top: rem(5px);
 }
@@ -129,15 +129,16 @@
     font-weight: 300;
 }
 
-.active {
-    h3 {
+.active-accordion {
+    .team__member-name {
         color: $yellow;
     }
-    svg {
+
+    .team__member-arrow {
         transform: rotate(180deg);
     }
 }
 
-.team__member.active + .team__member-info {
+.team__member.active-accordion + .team__member-info {
     display: block;
 }

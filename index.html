@@ -15,7 +15,7 @@
   </head>
     <body>
       <div class="main-container" id="fullpage">
-        <section class="section promo">
+        <section class="section promo" data-anchor="promo">
           <div class="center-container">
             <header class="main-header">
               <a href="#" class="main-logo">
@@ -23,13 +23,13 @@
               </a>
               <nav class="main-nav">
                 <ul class="main-nav__list">
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Бургеры</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Команда</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Меню</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Как мы работаем</a></li>
-                  <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+                  <li class="main-nav__item"><a href="#info-section" class="main-nav__link">О нас</a></li>
+                  <li class="main-nav__item"><a href="#slider-section" class="main-nav__link">Бургеры</a></li>
+                  <li class="main-nav__item"><a href="#team-section" class="main-nav__link">Команда</a></li>
+                  <li class="main-nav__item"><a href="#menu-section" class="main-nav__link">Меню</a></li>
+                  <li class="main-nav__item"><a href="#comments-section" class="main-nav__link">Отзывы</a></li>
+                  <li class="main-nav__item"><a href="#video-section" class="main-nav__link">Как мы работаем</a></li>
+                  <li class="main-nav__item"><a href="#contacts-section" class="main-nav__link">Контакты</a></li>
                 </ul>
               </nav>
               <div class="button-container">
@@ -51,7 +51,7 @@
             <button class="next-section-btn"></button>
           </div>
         </section>
-        <section class="section info-section">
+        <section class="section info-section" data-anchor="info-section">
           <div class="center-container center-container--info">
             <h1 class="title info__title">Мы лучшие</h1>
             <ul class="info__list">
@@ -97,7 +97,7 @@
             </ul>
           </div>
         </section>
-        <section class="section slider-section">
+        <section class="section slider-section" data-anchor="slider-section">
           <div class="slider">
             <a href="#" class="slide__arrow slide__arrow--prev">
                 <svg class="slide__arrow-img" width = "27px" height="13px" fill = "#fff">
@@ -543,13 +543,13 @@
             </div>
           </div>
         </section>
-        <section class="section team-section">
+        <section class="section team-section" data-anchor="team-section">
           <div class="team-container">
             <h1 class="title team__title">Команда</h1>
             <ul class="team__list">
               <li class="team__item">
                 <a class="team__member" href="#">
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
+                  <svg class="team__member-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
                   <h3 class="team__member-name title">Дэниэл Редклиф</h3>
                 </a>
                 <div class="team__member-info">
@@ -565,8 +565,8 @@
                 </div>
               </li> 
               <li class="team__item">
-                <a class="team__member active" href="#">
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
+                <a class="team__member active-accordion" href="#">
+                  <svg class="team__member-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
                   <h3 class="team__member-name title">Ричард Джеймс</h3>
                 </a>
                 <div class="team__member-info">
@@ -583,7 +583,7 @@
               </li>
               <li class="team__item">
                 <a class="team__member" href="#">
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
+                  <svg class="team__member-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
                   <h3 class="team__member-name title">Джейк Финн</h3>
                 </a>
                 <div class="team__member-info">
@@ -600,7 +600,7 @@
               </li>
               <li class="team__item">
                 <a class="team__member" href="#">
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
+                  <svg class="team__member-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="6" viewBox="0 0 9 6"><defs><path id="q7yja" d="M662.5 2180.14l-4.5-6h9z"/></defs><g><g transform="translate(-658 -2174)"><use fill="#f9b43b" xlink:href="#q7yja"/></g></g></svg>
                   <h3 class="team__member-name title">Николай Иванов</h3>
                 </a>
                 <div class="team__member-info">
@@ -618,7 +618,7 @@
             </ul>
           </div>
         </section>
-        <section class="section menu-section">
+        <section class="section menu-section" data-anchor="menu-section">
           <h1 class="menu__title title">Меню</h1>
           <div class="accordion-menu">
             <ul class="accordion-menu__list">
@@ -655,7 +655,7 @@
             </ul>
           </div>
         </section>
-        <section class="section comments-section">
+        <section class="section comments-section" data-anchor="comments-section">
           <ul class="comments__list">
             <li class="comments__item" style="background-image: url(./img/photo-1.jpg)">
               <div class="comments-container">
@@ -747,8 +747,8 @@
             </li>
           </ul>
         </section>
-        <section class="section video-section"></section>
-        <section class="section form-section">
+        <section class="section video-section" data-anchor="video-section"></section>
+        <section class="section form-section" data-anchor="form-section">
           <div class="center-container">
               <h1 class="form__title title">Закажите доставку</h1>
               <div class="form__container">
@@ -828,7 +828,7 @@
             <button class="btn btn--red modal-btn">Закрыть</button>
           </div>
         </section>
-        <section class="section contacts-section">
+        <section class="section contacts-section" data-anchor="contacts-section"> 
           <div class="map" id="map"></div>
             <footer class="contacts__footer">
                 <div class="center-block">
@@ -867,6 +867,45 @@
               </footer>
         </section>
         
+      </div>
+      <div class="navigation__block">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a href="#promo" class="navigation__link"></a>
+          </li>
+          <li class="navigation__item">
+            <a href="#info-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#slider-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#team-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#menu-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#comments-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#video-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#form-section" class="navigation__link"></a>
+          </li>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts-section" class="navigation__link"></a>
+          </li>
+          </li>
+        </ul>
       </div>
 
       <div class="full-screen__menu hidden">

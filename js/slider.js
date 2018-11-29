@@ -27,4 +27,4 @@ $('.slider__list').slick({
 });
 
 
-// $('#fullpage').fullpage({});
+$('#fullpage').fullpage({});

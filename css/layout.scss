@@ -40,12 +40,13 @@ a {
 .main-container {
     position: relative;
     min-height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .center-container {
     position: relative;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     max-width: rem(940px);
     display: flex;
