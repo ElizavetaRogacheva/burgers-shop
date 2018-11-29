@@ -1,0 +1,15 @@
+.navigation__block {
+  border: 1px solid salmon;
+  position: fixed;
+  top: rem(72px);
+  right: rem(20px);
+  width: rem(50px);
+  z-index: 1000; }
+
+.navigation__link {
+  width: rem(5px);
+  height: rem(5px);
+  background-color: #fff;
+  border-radius: rem(10px); }
+
+/*# sourceMappingURL=navigation.css.map */
