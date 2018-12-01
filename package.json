@@ -1,0 +1,28 @@
+{
+  "name": "burgers-shop",
+  "version": "1.0.0",
+  "description": "сайт магазина бургеров",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizavetaRogacheva/burgers-shop.git"
+  },
+  "keywords": [
+    "'burgers'",
+    "'burgers-shop'",
+    "'mr",
+    "burger'"
+  ],
+  "author": "Rogacheva Elizaveta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElizavetaRogacheva/burgers-shop/issues"
+  },
+  "homepage": "https://github.com/ElizavetaRogacheva/burgers-shop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
