@@ -748,8 +748,32 @@
           </ul>
         </section>
         <section class="section video-section" data-anchor="video-section">
-          <h1 class="title">Как мы работаем</h1>
-          <div class="video__container"></div>
+          <h1 class="title video__title">Как мы работаем</h1>
+          <div class="video__container">
+            <div class="player" id="yt-player"></div>
+            <div class="player__bg"></div>
+            <div class="player__tool">
+              <button class="player__btn-play">
+                <svg class="play__icon" width = "21px" height="30px" fill = "#fff" opacity="0.5">
+                  <use xlink:href = "img/svg/sprite.svg#play"></use>
+                </svg>
+                <svg class="pause__icon" width = "21px" height="30px" fill = "#fff" opacity="0.5">
+                  <use xlink:href = "img/svg/sprite.svg#pause"></use>
+                </svg>
+              </button>
+              <div class="player__scale player__scale--video">
+                <div class="scale__pin scale__pin--video"></div>
+              </div>
+              <div class="player__volume">
+                <svg class="volume__icon" width = "21px" height="30px" fill = "#fff" opacity="0.5">
+                  <use xlink:href = "img/svg/sprite.svg#volume"></use>
+                </svg>
+              </div>
+              <div class="player__scale player__scale--volume">
+                <div class="scale__pin scale__pin--volume"></div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="section form-section" data-anchor="form-section">
           <div class="center-container">
@@ -931,5 +955,6 @@
       <script src="js/accordion-menu.js"></script>
       <script src="js/form.js"></script>
       <script src="js/video.js"></script>
+      <script src="https://www.youtube.com/iframe_api"></script>
     </body>
 </html>
